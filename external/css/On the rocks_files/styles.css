@@ -1,0 +1,128 @@
+/* =============
+    BASIC SETUP 
+================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #262222;
+    font-family: "Lato", sans-serif;
+    font-size: 25px; /*base font-size*/
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.container {
+    max-width: 1140px; 
+    margin: 0 auto;
+}
+
+/* ========
+    HEADER 
+=========== */
+
+header {
+    /*add black overlay to image*/
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(imgs/header.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.main-headline { 
+    /*center the headline*/
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+}
+
+h1 {
+    margin: 0; /*remove normalize top margin on all h1*/
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+/* NAV BAR */
+
+.brand-logo {
+    height: 140px;
+    float: left;
+    width: auto;
+}
+
+.top-nav {
+    float: right;
+    list-style: none;
+}
+
+.top-nav li {
+    display: inline-block;
+    margin: 50px 10px;
+}
+
+.top-nav li:nth-of-type(4) {
+    margin-right: 80px;
+}
+
+.top-nav li a:link, 
+.top-nav li a:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 0.8rem;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 100px;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.top-nav li a:hover, 
+.top-nav li a:active {
+    border: 1px solid rgba(243, 156, 18,1.0);
+    color: rgba(243, 156, 18,1.0);
+}
+
+/* BUTTONS */
+
+.btn:link, .btn:visited {
+    text-decoration: none;
+    color: white;
+    border-radius: 100px;
+    display: inline-block; /* to give some padding, a mix between inline and block elements*/
+    padding: 10px 30px;
+    font-weight: 200;
+    margin-top: 30px;
+    transition: all 0.3s;
+    border: 1px solid rgba(243, 156, 18,1.0); /* common attributes to both buttons */
+}
+
+.btn-regular:link, .btn-regular:visited {
+    background-color: rgba(243, 156, 18,1.0);
+}
+
+.btn-border:link, .btn-border:visited {
+    color: rgba(243, 156, 18,1.0);
+    margin-left: 20px;
+}
+
+/* BUTTON STATES */
+.btn-regular:hover, .btn-regular:active {
+    color: rgba(243, 156, 18,1.0);
+    background-color: transparent;
+}
+
+.btn-border:hover, .btn-border:active {
+    color: white;
+    background-color: rgba(243, 156, 18,1.0);
+}

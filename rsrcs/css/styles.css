@@ -1,0 +1,243 @@
+/* =============
+    BASIC SETUP 
+================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #262222;
+    font-family: "Lato", sans-serif;
+    font-size: 25px; /*base font-size*/
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.container {
+    max-width: 1140px; 
+    margin: 0 auto;
+    overflow: auto;
+}
+
+/* ========
+    HEADER 
+=========== */
+
+header {
+    /*add black overlay to image*/
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(imgs/header.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.main-headline { 
+    /*center the headline*/
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+}
+
+h1, 
+h2 {
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0; /*remove normalize top margin on all h1*/
+    font-size: 2.2rem;
+    color: white;
+}
+
+/* NAV BAR */
+
+.brand-logo {
+    height: 140px;
+    float: left;
+    width: auto;
+}
+
+.top-nav {
+    float: right;
+    list-style: none;
+}
+
+.top-nav li {
+    display: inline-block;
+    margin: 50px 10px;
+}
+
+.top-nav li:nth-of-type(4) {
+    margin-right: 80px;
+}
+
+.top-nav li a:link, 
+.top-nav li a:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 0.8rem;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 100px;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.top-nav li a:hover, 
+.top-nav li a:active {
+    border: 1px solid rgba(243, 156, 18,1.0);
+    color: rgba(243, 156, 18,1.0);
+}
+
+/* BUTTONS */
+
+.btn:link, .btn:visited {
+    text-decoration: none;
+    color: white;
+    border-radius: 100px;
+    display: inline-block; /* to give some padding, a mix between inline and block elements*/
+    padding: 10px 30px;
+    font-weight: 200;
+    margin-top: 30px;
+    transition: all 0.3s;
+    border: 1px solid rgba(243, 156, 18,1.0); /* common attributes to both buttons */
+}
+
+.btn-regular:link, .btn-regular:visited {
+    background-color: rgba(243, 156, 18,1.0);
+}
+
+.btn-border:link, .btn-border:visited {
+    color: rgba(243, 156, 18,1.0);
+    margin-left: 20px;
+}
+
+/* BUTTON STATES */
+.btn-regular:hover, .btn-regular:active {
+    color: rgba(243, 156, 18,1.0);
+    background-color: transparent;
+}
+
+.btn-border:hover, .btn-border:active {
+    color: white;
+    background-color: rgba(243, 156, 18,1.0);
+}
+
+
+/*=================*/
+/*DELIVERY SECTION */
+/*=================*/
+
+section {
+    padding: 70px 0;
+}
+
+h2 {
+    font-size: 1.9rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h2::after,
+h3::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: rgba(243, 156, 18,1.0);
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h3::after {
+    width: 40px;
+}
+
+p.content-sec-2 {
+    line-height: 150%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+#columns {
+    padding: 0.2rem;
+}
+
+h3 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#columns p { 
+    font-size: 0.8rem;
+    line-height: 150%;
+    text-align: justify;
+}
+
+#custom-icon {
+    font-size: 2rem;
+    color: rgba(243, 156, 18,1.0);
+    margin-bottom: 10px;
+    margin-left: 42%;
+}
+
+/*=============*/
+   /*SWHOCASE*/
+/*=============*/
+
+.showcase-section {
+    padding: 0;
+}
+
+.showcase {
+    list-style: none;
+    width: 100%;
+    overflow: auto;
+}
+
+.showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    background-color: black;
+}
+
+.figures {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.figures img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.13);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.figures img:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
