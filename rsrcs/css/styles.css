@@ -122,10 +122,6 @@ nav {
 /*===============*/
 /* Sticky navbar */
 /*===============*/
-* {
-    transition: all 0.3s ease-in-out;
-}
-
 .sticky-navbar {
     position: fixed;
     width: 100%;
@@ -136,6 +132,7 @@ nav {
     -moz-box-shadow: 0px 6px 11px -4px rgba(0,0,0,0.75);
     box-shadow: 0px 6px 11px -4px rgba(0,0,0,0.75);
     z-index: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 .sticky-navbar .top-nav li a:link, 
@@ -175,6 +172,20 @@ nav {
     display: none;
 }
 
+/*=================*/
+/*BURGER NAVIGATION*/
+/*=================*/
+.burger-icon {
+    float: right;
+    margin-top: 40px;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+.burger-icon i{
+    font-size: 200%;
+}
 
 /* BUTTONS */
 
@@ -665,6 +676,48 @@ footer {
     .labels {
         text-align: center;
         margin: 10px;
+    }
+    .top-nav .brand-logo {
+        max-width: 100px;
+        height: 80px;
+    }
+    .top-nav {
+        display:none;
+    }
+    .burger-icon {
+        display: inline-block;
+    }
+    .top-nav {
+        float: left;
+        margin-top: 38px;
+        margin-left: 25px;
+    }
+    .top-nav li{
+        display: block;
+    }
+    .top-nav li a:link,
+    .top-nav li a:visited{
+        border:0;
+        display: block;
+        padding: 5px 0;
+        font-size: 100%;
+    }
+    .sticky-navbar .top-nav {
+        margin-top: 10px;
+        float: left;
+    }
+    .sticky-navbar .top-nav li a:link,
+    .sticky-navbar .top-nav li a:visited{
+        padding: 10px 0;
+        border: 0;
+    }
+    .sticky-navbar .burger-icon {
+        color: black;
+        margin-top: 12px;
+    }
+    .sticky-navbar .brand-logo-color{
+        max-width: 100px;
+        height: 80px;
     }
 }
 
