@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>On the rocks</title>
         
         <!-- resposive grid -->
@@ -26,23 +28,27 @@
                 <!-- NAVIGATION BAR -->
                 <nav>
                     <img src="rsrcs/imgs/logo-white.png" class="brand-logo" alt="On the rocks">
-                    <ul class="top-nav">
-                        <li><a href="#">Delivery</a></li>
-                        <li><a href="#">Showcase</a></li>
-                        <li><a href="#">Our branches</a></li>
-                        <li><a href="#">Sign Up</a></li>
-                    </ul>
+                    <img src="rsrcs/imgs/logo-color.png" class="brand-logo-color" alt="On the rocks">
+
+                    <div class="container">
+                        <ul class="top-nav">
+                            <li><a href="#delivery">Delivery</a></li>
+                            <li><a href="#showcase">Showcase</a></li>
+                            <li><a href="#locations">Our branches</a></li>
+                            <li><a href="#meal-plans">Sign Up</a></li>
+                        </ul>
+                    </div>
                 </nav>
 
             <div class="main-headline">
                 <h1>Hungry? We'll feed you. Thirsty? We'll get you drunk. <br>Lonely? ...We'll get you drunk.</h1>
-                <a class="btn btn-regular" href="#">YEAH!</a>
-                <a class="btn btn-border" href="#">learn more.</a>
+                <a class="btn btn-regular js-yeah-btn" href="#">YEAH!</a>
+                <a class="btn btn-border js-learn-btn" href="#">learn more.</a>
             </div>                 
         </header>
 
         <!-- DELIVERY -->
-        <section class="delivery-section">
+        <section class="delivery-section js-del-sec" id="delivery">
                 <div class="container">
                     <h2>Get food and booze, faster than ever!</h2>
                     <p class="content-sec-2">
@@ -83,7 +89,7 @@
         </section>
 
         <!-- SHOWCASE -->
-        <section class="showcase-section">
+        <section class="showcase-section" id="showcase">
         <!-- First row -->
             <ul class="showcase">
                 <li>
@@ -132,6 +138,270 @@
             </ul>
         </section>
 
+        <!-- HOW WE ROLL -->
+        <section class="how-it-works js-how-it-works">
+            <div class="container">
+                <h2>This is how we roll</h2>
+            </div>
+            <div class="container">
+                <div class="col span-1-of-2 box1">
+                    <img src="rsrcs/imgs/frame.png" class="frame" alt="iphone app">
+                </div>
+                <div class="col span-1-of-2 box2">
+                    <div class="inner-text">                   
+                        <div>1</div>
+                        <p>Choose one of our subscription plans.</p>
+                    </div>                    
+                    <div class="inner-text">                   
+                        <div>2</div>
+                        <p>Pick-up or order through our iPhone app, website or call.</p>
+                    </div>
+                    <div class="inner-text">                   
+                        <div>3</div>
+                        <p>Get your order within thirty minutes.</p>
+                    </div>
 
+                    <a href="#" class="btn-app"><img src="rsrcs/imgs/appStore.png"></a>
+                    <a href="#" class="btn-app"><img src="rsrcs/imgs/googlePlay.png" class="google-play"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CITIES -->
+        <section id="locations">
+            <div class="container">
+                <h2>Our locations</h2>
+            </div>
+            <div class="container">
+                <div class="col span-1-of-4 city">
+                    <img src="rsrcs/imgs/london.jpg">
+                    <h3>London</h3>
+                    <div class="city-box">
+                        <i class="icon-users"></i> 2300+ people on the <span id="rocks">rocks.</span><br>
+                        <i class="icon-thumb-tack"></i> 4 active locations<br>
+                        <i class="icon-twitter"></i><a href="#" class="twitter-links"> <em>@londonOTR</em></a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 city">
+                    <img src="rsrcs/imgs/newYork.jpg">
+                    <h3>New York</h3>
+                    <div class="city-box">
+                        <i class="icon-users"></i> 3000+ people on the <span id="rocks">rocks.</span><br>
+                        <i class="icon-thumb-tack"></i> 6 active locations<br>
+                        <i class="icon-twitter"></i><a href="#" class="twitter-links"> <em>@newyorkOTR</em></a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 city">
+                    <img src="rsrcs/imgs/rome.jpg">
+                    <h3>Rome</h3>
+                    <div class="city-box">
+                        <i class="icon-users"></i> 2000+ people on the <span id="rocks">rocks.</span><br>
+                        <i class="icon-thumb-tack"></i> 3 active locations<br>
+                        <i class="icon-twitter"></i><a href="#" class="twitter-links"><em>@romeOTR</em></a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 city">
+                    <img src="rsrcs/imgs/paris.jpg">
+                    <h3>Paris</h3>
+                    <div class="city-box">
+                        <i class="icon-users"></i> 1800+ people on the <span id="rocks">rocks.</span><br>
+                        <i class="icon-thumb-tack"></i> 4 active locations<br>
+                        <i class="icon-twitter"></i><a href="#" class="twitter-links"><em> @parisOTR</em></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- customer reviews -->
+        <section class="reviews">
+            <div class="container">
+                    <h2>Our customers love us</h2>
+            </div>
+                <div class="container">
+                    <div class="col span-1-of-3">
+                        <blockquote>On the rocks is so crazy good! My friends would never know how much I love them at 4 A.M. if it wasn't for On the rocks. <br>
+                        </blockquote>
+                        <cite><img src="rsrcs/imgs/c1.gif">Jon Snow</cite>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <blockquote>Lately I've been making a lot of sober decisions but not anymore! On the rocks added that missing tinch of excitement to my life. <br>
+                        </blockquote>
+                        <cite><img src="rsrcs/imgs/c2.jpg">Rhaegar Targaryen</cite>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <blockquote>I met my current business partner at On the rocks. Know why? Because no great conversation ever started between two people eating salad. <br>
+                        </blockquote>
+                        <cite><img src="rsrcs/imgs/c3.jpg">Lyanna Stark</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- subscriptions -->
+        <section class="subscription js-subscription" id="meal-plans">
+            <div class="container">
+                <h2>Choose a meal plan</h2>
+            </div>
+            <div class="container">
+                <div class="col span-1-of-3">
+                    <div class="first-box">
+                        <div class="sub-top-box">
+                            <div>
+                                <h3>Premium</h3><br>
+                                <div class="top-price">
+                                    <span id="price">$300</span><span id="month">/month</span><br>
+                                </div>
+                                    <span id="meal-price">$10 a meal</span>
+                            </div>
+                        </div>
+
+                        <div class="sub-middle-box">
+                            <i class="icon-check checkmark"></i>1 meal everyday <br>
+                            <i class="icon-check checkmark"></i>Order 24/7 <br>
+                            <i class="icon-check checkmark"></i>Free delivery <br>
+                            <i class="icon-check checkmark"></i>Buy 1 beer at cost of 2 and <span id="second-beer">2nd beer free! </span><br>
+                        </div>
+
+                        <div class="sub-bottom-box">
+                            <a href="#" class="btn btn-regular">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <div class="first-box">
+                         <div class="sub-top-box">
+                                <div>
+                                    <h3>Pro</h3><br>
+                                    <div class="top-price">
+                                        <span id="price">$195</span><span id="month">/month</span><br>
+                                    </div>
+                                    <span id="meal-price">$13 a meal</span>
+                                </div>
+                            </div>
+
+                            <div class="sub-middle-box">
+                                <i class="icon-check checkmark"></i>15 meals<span id="month">/month</span> <br>
+                                <i class="icon-check checkmark"></i>Order 24/7 <br>
+                                <i class="icon-check checkmark"></i>Free delivery <br>
+                                <i class="icon-check checkmark"></i>Buy 1 beer at cost of 2 and <span id="second-beer">2nd beer free! </span><br>
+                            </div>
+
+                            <div class="sub-bottom-box">
+                                <a href="#" class="btn btn-border">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <div class="first-box">
+                        <div class="sub-top-box">
+                            <div class="extra-space">
+                                <h3>Basic</h3><br>
+                                <div class="top-price">
+                                    <span id="price">$15</span>/meal
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-middle-box">
+                            <i class="icon-check checkmark"></i>Pay per meal <br>
+                            <i class="icon-check checkmark"></i>Order 11 am to 11 pm <br>
+                            <i class="icon-check checkmark"></i>Free delivery <br>
+                            <i class="icon-check checkmark"></i>Buy 1 beer at cost of 2 and <span id="second-beer">2nd beer free! </span><br>
+                        </div>
+
+                        <div class="sub-bottom-box">
+                            <a href="#" class="btn btn-border">Sign Up</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2>Share a word</h2>
+            </div>
+            <div class="container">
+                <form method="POST" action="#" class="contact-form">
+                    <div class="container">
+                        <div class="col span-1-of-3 labels">
+                            <label for="name">Name:</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col span-1-of-3 labels">
+                            <label for="email">Email:</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col span-1-of-3 labels">
+                            <label for="reason">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="reason" id="reason">
+                                <option value="Friends" selected>Friends</option>
+                                <option value="Newsletters">Newsletters</option>
+                                <option value="Google">Google</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col span-1-of-3 labels">
+                            <label for="message">Message:</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea id="message" name="message" placeholder="Say something awesome..."></textarea>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col span-1-of-3">
+                            <label></label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <a href="#" class="btn btn-regular" id="submit-form">Submit!</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+                <div class="col span-1-of-2 social-col">
+                    <ul class="footer-ul">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Newsfeeds</a></li>
+                        <li><a href="#">iOS app</a></li>
+                        <li><a href="#">Android app</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2 social-col">
+                    <ul class="socials">
+                        <li><a href="#"><i class="icon-facebook fb"></i></a></li>
+                        <li><a href="#"><i class="icon-social-instagram-outline insta"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-google-plus-1 gplus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear-all"></div>
+            <div class="container" id="end-text">
+                <p>Copyright &copy; 2016 On the rocks. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+        <script type="text/javascript" src="external/js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="external/js/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="rsrcs/js/script.js"></script>
     </body>
 </html>
