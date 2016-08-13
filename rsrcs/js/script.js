@@ -82,4 +82,12 @@ $(document).ready(function(){
 
 		$('.top-nav').slideToggle(400);
 	});
+
+	// google maps
+
+	new GMaps({
+	  div: '#map',
+	  lat: -12.043333,
+	  lng: -77.028333
+	});
 });
