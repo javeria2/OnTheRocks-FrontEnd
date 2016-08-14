@@ -91,5 +91,4 @@ $(document).ready(function(){
 	  lng: -88.3121289,
 	  zoom: 12
 	});
-
 });
