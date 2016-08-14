@@ -744,6 +744,27 @@ footer {
         max-width: 100px;
         height: 80px;
     }
+
+    #map {
+        width: 100%;
+        height: 350px;
+        position: relative;
+        z-index: 0;
+    }
+
+    .contact-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .form-box {
+        position: relative;
+        z-index: 1;
+        height: auto;
+        width: 50%;
+        padding-top: 30px;
+    }
 }
 
 @media only screen and (max-width: 847px) {
@@ -771,6 +792,9 @@ footer {
     }
     section {
         padding: 60px 0;
+    }
+    .form-box {
+        width: 90%;
     }
 }
 
