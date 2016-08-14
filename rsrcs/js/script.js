@@ -87,7 +87,8 @@ $(document).ready(function(){
 
 	new GMaps({
 	  div: '#map',
-	  lat: -12.043333,
-	  lng: -77.028333
+	  lat: 40.1146914,
+	  lng: -88.3121289,
+	  zoom: 12
 	});
 });

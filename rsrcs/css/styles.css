@@ -566,14 +566,14 @@ textarea{
 
 #map {
     width: 100%;
-    height: 600px;
+    height: 580px;
     position: relative;
     z-index: 0;
 }
 
 .contact-box {
     width: 100%;
-    height: 600px;
+    height: 580px;
     position: relative;
 }
 
@@ -583,7 +583,7 @@ textarea{
     right: 0;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1;
-    height: 600px;
+    height:580px;
     width: 50%;
     padding-top: 40px;
 }
