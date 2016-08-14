@@ -2,11 +2,6 @@ $(document).ready(function(){
 	document.querySelector(".js-animate-1").style.opacity = 0;
 	document.querySelector(".js-animate-2").style.opacity = 0;
 	document.querySelector(".js-frame").style.opacity = 0;
-	var map = document.getElementById("map");
-	var latLng = {
-	  latitude: 40.1146914,
-	  longitude: -88.3121289
-	};
 
 	// sticky nav
 	$('.js-del-sec').waypoint(function(direction){
@@ -94,30 +89,7 @@ $(document).ready(function(){
 	  div: '#map',
 	  lat: 40.1146914,
 	  lng: -88.3121289,
-	  zoom: 12,
-	  offsetCenter(latLng, -20, 0);
+	  zoom: 12
 	});
 
-	function offsetCenter(latlng, offsetx, offsety) {
-
-	    // latlng is the apparent centre-point
-	    // offsetx is the distance you want that point to move to the right, in pixels
-	    // offsety is the distance you want that point to move upwards, in pixels
-	    // offset can be negative
-	    // offsetx and offsety are both optional
-
-	    var scale = Math.pow(2, map.getZoom());
-
-	    var worldCoordinateCenter = map.getProjection().fromLatLngToPoint(latlng);
-	    var pixelOffset = new google.maps.Point((offsetx/scale) || 0,(offsety/scale) ||0)
-
-	    var worldCoordinateNewCenter = new google.maps.Point(
-	        worldCoordinateCenter.x - pixelOffset.x,
-	        worldCoordinateCenter.y + pixelOffset.y
-	    );
-
-	    var newCenter = map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
-
-	    map.setCenter(newCenter);
-	}
 });
