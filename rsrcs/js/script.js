@@ -85,10 +85,20 @@ $(document).ready(function(){
 
 	// google maps
 
-	new GMaps({
+	var map = new GMaps({
 	  div: '#map',
 	  lat: 40.1146914,
-	  lng: -88.3121289,
+	  lng: -88.0,
 	  zoom: 12
 	});
+
+	map.addMarker({
+		lat: 40.1146914,
+	  lng: -88.3121289,
+	  title:'champaign',
+	  infoWindow: {
+	  	content: '<p>Come try us!</p>'
+	  }
+	});
+
 });
