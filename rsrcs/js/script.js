@@ -29,6 +29,7 @@ $(document).ready(function(){
 			/* stuff to do after animation is complete */
 		});
 	});
+	
 	//on clicking anchors
 	$(function() {
 	  $('a[href*="#"]:not([href="#"])').click(function() {
